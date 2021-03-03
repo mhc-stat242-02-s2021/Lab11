@@ -1,0 +1,88 @@
+---
+title: "Lab 11 - Logistic Regression"
+subtitle: "STAT 242: Intermediate Statistics"
+output: pdf_document
+---
+
+```{r setup, echo=FALSE}
+## Load libraries
+library(MASS)
+
+## Load data
+MedGPA <- read.csv("https://marievozanne.github.io/stat340_f2020/data/MedGPA.csv")
+```
+
+
+## Medical School Admissions.
+
+#### The data for Medical School Admissions is in MedGPA.csv, taken from undergraduates from a small liberal arts school over several years. We are interested in student attributes that are associated with higher acceptance rates.
+
+- `Accept` = accepted (A) into medical school or denied (D)
+- `Acceptance` = accepted (1) into medical school or denied (0)
+- `Sex` = male (M) or female (F)
+- `BCPM` = GPA in natural sciencces and mathematics
+- `GPA` = overall GPA
+- `VR` = verbal reasoning subscale score of the MCAT
+- `PS` = physical sciences subscale score of the MCAT
+- `WS` = writing samples subscale score of the MCAT
+- `BS` = biological sciences subscale score of the MCAT
+- `MCAT` = MCAT total score
+- `Apps` = number of schools applied to
+
+For this lab, we will use `Acceptance`, `GPA`, and `MCAT`.
+
+#### (a) Fit a logistic regression model with `Acceptance` as the response variable, and `GPA` as the explanatory variable. Since we have not discussed the assumptions for logistic regression in detail yet, you may assume that the assumptions are met.
+
+```{r}
+
+```
+
+
+#### (b) Interpret the effect of `GPA` on the log odds of acceptance into medical school.
+
+
+
+
+#### (c) Interpret the effect of `GPA` on the odds of acceptance into medical school.
+
+
+
+#### (d) Examine the p-value associated with `GPA` in the model summary. What hypothesis do you think this corresponds to? What are the conclusions of this hypothesis test, based on your p-value?
+
+
+
+#### (e) Fit a logistic regression model with `Acceptance` as the response variable, and `MCAT` as the explanatory variable. Since we have not discussed the assumptions for logistic regression in detail yet, you may assume that the assumptions are met. 
+
+```{r}
+
+```
+
+
+#### (f) Interpret the effect of `MCAT` on the log odds of acceptance into medical school.
+
+
+
+#### (g) Interpret the effect of `MCAT` on the odds of acceptance into medical school.
+
+
+
+#### (h) Examine the p-value associated with `GPA` in the model summary. What hypothesis do you think this corresponds to? What are the conclusions of this hypothesis test, based on your p-value?
+
+
+
+#### (i) Is there any evidence that the effect of MCAT score or GPA differs for males and females (hint: think different slopes)? Use what you know from linear regression to fit two models to address this question, one with `MCAT` and `Sex` in it, and the other with `GPA` and `Sex` in it, and to conduct the appropriate hypothesis tests.
+
+```{r}
+
+```
+
+
+
+- Note, we will discuss more models like the one in (i) formally on Thursday -- this last exercise is intended to give you an introduction into some of what we will be thinking about in class.
+
+## References
+
+A. Cannon et al. 2018. Package Stat2Data. "https://cran.r-project.org/web/packages/Stat2Data/Stat2Data.pdf"
+
+P. Roback and J. Legler. 2020. \emph{Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R}.
+
